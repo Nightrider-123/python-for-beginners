@@ -1,0 +1,9 @@
+for i in range(10000
+   sum=0
+   n=len(str(i))
+   while(i!=0):
+      r=i%10
+      s=s+r**n
+      i=i//10
+   if num ==s:
+      print(num)
