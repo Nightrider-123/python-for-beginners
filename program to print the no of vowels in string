@@ -1,0 +1,8 @@
+n=input("enter a sentence")
+s=n.lower()
+count=0
+vowl=["a","e","i","o","u"]
+for i in s:
+  if i in vowl:
+    count=count+1
+print("the number of vowels are",count)
