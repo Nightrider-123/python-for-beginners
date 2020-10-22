@@ -1,0 +1,19 @@
+fib={}
+def fibo(n):
+     if (n in fib):
+       return fib[n]
+     elif(n==0):
+       res=0
+       fib[n]=res
+       return fib[n]
+     elif (n==1):
+       res=1
+       fib[n]=res
+       return fib[n]
+     else:
+       res=fibo(n-1)+fibo(n-2)
+       fib[n]=res
+       return fib[n]
+n=int(input("enter the nth number"))
+num= fibo(n)
+print("the",n,"fibonacci number is :",num)
