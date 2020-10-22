@@ -1,0 +1,11 @@
+arr=[]
+n=int(input("ënter the limit"))
+for i in range(n):
+   r=int(input("enter the number"))
+   arr.insert(i,r)
+for i in range (n):
+   for j in range (i,n):
+        if(i!=j):
+          k=arr[i] + arr[j]
+        if k in arr:
+          print("(",arr[i],",", arr[j],")",end=" ")
