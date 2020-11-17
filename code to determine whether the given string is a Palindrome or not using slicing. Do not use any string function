@@ -1,0 +1,14 @@
+n=input("enter the string")
+flag=0
+for i in (n):
+    flag++
+    for j in range(len(b),len(b)//2 -1):
+        if(b[i]!=b[j]):
+            flag==1
+            break
+if (flag==0):
+    print("the string is palindrome")
+else:
+    print("the string is not palindrome")
+   
+        
