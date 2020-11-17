@@ -1,0 +1,13 @@
+n=input("enter the string to be counted")
+print("there are",len(n.split()),"words")
+vowel=consonent=symbol=space=0
+for i in range(0,len(n)):
+    if (n[i]=='a' or n[i]=='A' or n[i]=='e' or n[i]=='E' or n[i]=='i' or n[i]=='I' or n[i]=='o' or n[i]=='O' or n[i]=='u' or n[i]=='U' ):
+        vowel+=1
+    elif(n[i]=='@' or n[i]=='#' or n[i]=='$' or n[i]=='%'):
+        symbol+=1
+    elif(n[i]==' '):
+        space+=1
+    else:
+        consonent+=1
+print("there are",vowel,"vowels,",symbol,"special symbols and",consonent,"consonents")
