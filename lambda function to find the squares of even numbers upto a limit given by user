@@ -1,0 +1,7 @@
+x=lambda a:a*a
+n=int(input("enter the limit"))
+sum=0
+for i in range(n+1):
+    if (i%2==0):
+        sum=sum+x(i)
+print(sum)
