@@ -1,0 +1,14 @@
+n=input("enter the number")
+sum=0
+for i in range(len(n)):
+  r=int(n)%10
+  sum=sum+r*8**i
+  n=int(n)//10
+g=sum
+print(g)
+sum1=0
+for i in range(len(str(g))):
+   r=g%16
+   g=g//16
+   sum1=sum1+r*10**i
+print("the hexadecimal equivalent",sum1)
