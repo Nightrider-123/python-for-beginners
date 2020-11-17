@@ -1,0 +1,9 @@
+n=input("enter the rqandom numbers")
+sum=sumpos=0
+for i in range(0,len(n)):
+    j=int(n[i])
+    if j<0:
+        sum=sum+j
+    else:
+        sumpos=sumpos+j
+print("the sum of positive numbers :",sumpos,"and the sum of negative numbers :",sum)
